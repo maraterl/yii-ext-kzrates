@@ -1,0 +1,27 @@
+.rates {
+    height:65px;
+    vertical-align: top;
+}
+.rates div {
+    padding-left: 16px;
+    height: 14px;
+    margin-bottom: 5px;
+    font: 14px sans-serif;
+}
+.rates div .DOWN {
+    background: url('images/DOWN.png') no-repeat 0 0;
+    padding-left: 15px;
+}
+.rates div .UP {
+    background: url('images/UP.png') no-repeat 0 0;
+    padding-left: 15px;
+}
+.rates .USD {
+    background: url('images/currency.png') no-repeat 0 0;
+}
+.rates .EUR {
+    background: url('images/currency-euro.png') no-repeat 0 0;
+}
+.rates .RUB {
+    background: url('images/currency-ruble.png') no-repeat 0 0;
+}
