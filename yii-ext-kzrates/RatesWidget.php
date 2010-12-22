@@ -1,4 +1,17 @@
 <?php
+/*
+ * RatesWidget  class file 
+ * 
+ * 
+ * @version 0.5
+ * @author sdek
+ * @link https://code.google.com/p/yii-ext-kzrates
+ * @copyright Copyright &copy; 2010 sdek
+ *
+ * 
+ *
+ */
+
 
 class RatesWidget extends CWidget{
 
@@ -23,11 +36,11 @@ class RatesWidget extends CWidget{
 
 	public $htmlOptions=array();
 
-        public $ratesToShow = array('USD', 'EUR', 'RUB');
+    public $ratesToShow = array('USD', 'EUR', 'RUB');
 
-        public $ratesURL = "http://nationalbank.kz/rss/rates_all.xml";
+    public $ratesURL = "http://nationalbank.kz/rss/rates_all.xml";
 
-        public $useCache;
+    public $useCache;
 
 	public function init(){
 		$this->resolvePackagePath();
