@@ -4,7 +4,7 @@
  * 
  * 
  * @version 0.5
- * @author sdek
+ * @author mitrii
  * @link https://code.google.com/p/yii-ext-kzrates
  * @copyright Copyright &copy; 2010 sdek
  *
