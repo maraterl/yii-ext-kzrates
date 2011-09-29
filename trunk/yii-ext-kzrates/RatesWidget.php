@@ -6,7 +6,7 @@
  * @version 0.5
  * @author mitrii
  * @link https://code.google.com/p/yii-ext-kzrates
- * @copyright Copyright &copy; 2010 sdek
+ * @copyright Copyright &copy; 2010 mitrii
  *
  * 
  *
@@ -48,11 +48,6 @@ class RatesWidget extends CWidget{
                 $this->useCache = !is_null(Yii::app()->cache);
 		parent::init();
 	}
-
-	/**
-	 * Run this widget.
-	 * This method registers necessary javascript and renders the needed HTML code.
-	 */
 
         public function GetRatesRSS(){
                 $ch = curl_init($this->ratesURL);
@@ -103,8 +98,6 @@ class RatesWidget extends CWidget{
                         'htmlOptions'=>$this->htmlOptions,
                         'tagName'=>$this->tagName,
                     ));
-
-		//Yii::app()->getClientScript()->registerScript(__CLASS__.'#'.$id,"$.jqplot('$id', $plotdata, $flotoptions);");
 	}
 
 	protected function resolvePackagePath(){
